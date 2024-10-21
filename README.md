@@ -40,20 +40,20 @@ A real-time weather monitoring dashboard built with Next.js that provides curren
 - **Development Environment:** Node.js 18+
 
 
-Prerequisites
+## Prerequisites
 Node.js 18.0 or higher.
 npm 9.0 or higher.
 OpenWeather API key.
 
-Installation
+## Installation
 Clone the repository:
 
-bash
-git clone https://github.com/yourusername/weather-monitoring-system.git
-cd weather-monitoring-system
+
+git clone https://github.com/anandkumar16/weatherapp.git
+cd project directory
 
 
-Install dependencies:
+## Install dependencies:
 
 npm install
 Configure environment variables:
@@ -67,33 +67,35 @@ NEXT_PUBLIC_OPENWEATHER_API_KEY=your_api_key_here
 
 
 
-Development
+## Development
 Start the development server:
 
 
 npm run dev
-Build for production:
+
+## Build for production:
 
 
 npm run build
 
 
 
-Design Choices
-1. Frontend Architecture
+## Design Choices
+
+***1. Frontend Architecture***
 Next.js: Chosen for its server-side rendering capabilities and optimized performance.
 TypeScript: Ensures type safety and better developer experience.
 shadcn/ui: Provides accessible, customizable components that follow best practices.
 Tailwind CSS: Enables rapid UI development with a utility-first approach.
 
 
-3. State Management
+***2. State Management***
 Used React's built-in hooks for state management instead of external libraries.
 Local storage for persisting user preferences and historical data.
 Implemented custom hooks for data fetching and state updates.
 
 
-5. Performance Optimizations
+***3. Performance Optimizations***
 Implemented debouncing for API calls.
 Used Next.js image optimization.
 Implemented proper error boundaries.
@@ -101,16 +103,17 @@ Lazy loading for heavy components.
 Memoization for expensive calculations.
 
 
-7. Responsive Design
+***4. Responsive Design***
 Mobile-first approach.
 Flexible grid system.
 Adaptive charts and visualizations.
 Touch-friendly interface.
-API Documentation
+
+***API Documentation***
 OpenWeather API Integration
 Base URL: https://api.openweathermap.org/data/2.5
 
-Endpoints used:
+***Endpoints used:***
 
 /weather: Current weather data
 Parameters:
@@ -119,7 +122,7 @@ lon: Longitude
 appid: API key
 
 
-Response format:
+***Response format:***
 
 
 {
@@ -136,7 +139,8 @@ Response format:
     "description": string
   }]
 }
-Performance Considerations
+
+***Performance Considerations***
 Data Fetching
 
 Implemented caching strategy.
@@ -147,10 +151,11 @@ Rendering
 Used React.memo for component optimization.
 Implemented proper loading states.
 Optimized re-renders using useMemo and useCallback.
-Security Considerations
+
+***Security Considerations***
 API Key Protection
 
-Environment variables for sensitive data.
+***Environment variables for sensitive data.***
 API key validation.
 Rate limiting implementation.
 Data Safety
