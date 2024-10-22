@@ -50,6 +50,7 @@ Clone the repository:
 
 
 git clone https://github.com/anandkumar16/weatherapp.git
+
 cd project directory
 
 
