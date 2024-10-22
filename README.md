@@ -2,7 +2,6 @@
 
 A real-time weather monitoring dashboard built with Next.js that provides current weather data, temperature trends, and alerts for major Indian cities. The system features a responsive design, interactive charts, and configurable temperature alerts.
 
-![Weather Dashboard Preview](/api/placeholder/800/400)
 
 ## Table of Contents
 - [Features](#features)
@@ -147,7 +146,8 @@ Data Fetching
 Implemented caching strategy.
 Rate limiting for API calls.
 Data persistence in localStorage.
-Rendering
+
+***Rendering***
 
 Used React.memo for component optimization.
 Implemented proper loading states.
